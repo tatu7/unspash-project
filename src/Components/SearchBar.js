@@ -5,7 +5,7 @@ class SearchBar extends Component {
   changeHundle(evt) {
     this.setState({ kalitSuz: evt.target.value });
   }
-  submitHandler = async (evt) => {
+  submitHandler = (evt) => {
     evt.preventDefault();
     this.props.searchOl(this.state.kalitSuz);
   };
